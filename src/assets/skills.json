@@ -1,0 +1,28 @@
+[
+    {
+        "title":"Hard Skills",
+        "topics":[
+            "JavaScript/TypeScript",
+            "HTML5, CSS3/Sass, Bootstrap (design responsivo) e Figma",
+            "ReactJS (Redux, Saga, Hooks, ContextAPI)",
+            "HTTP e integração com APIs",
+            "Node.js e Banco de Dados (básico)",
+            "Git e SCRUM",
+            "Inglês Intermediário",
+            "Principais bibliotecas do ambiente ReactJS",
+            "Estudando: Webpack, Babel, Next.js, testes unitários (jest e testing library), documentação de componente (Storybook) e Styled Components"
+        ]
+    },
+    {
+        "title":"Soft Skills",
+        "topics":[
+            "Organização",
+            "Trabalho em Equipe",
+            "Resolução de problemas",
+            "Comprometimento",
+            "Ética",
+            "Empatia",
+            "Flexibilidade"
+        ]
+    }
+]
