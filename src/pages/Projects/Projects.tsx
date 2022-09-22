@@ -26,7 +26,7 @@ export function Projects() {
       {projects.map((project: any) => (
         <RepoCard
           description={project.description}
-          link={project.url}
+          link={project.html_url}
           title={project.name}
           key={project.id}
         />
