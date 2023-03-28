@@ -30,7 +30,7 @@ export const Container = styled.main`
 `
 
 export const ContainerImage = styled.div`
-    width: 30%;
+    width: 35%;
     height: 100%;
 
     display: flex;
@@ -38,13 +38,15 @@ export const ContainerImage = styled.div`
     align-items: center;
 
     img{
-        width: 11.5rem;
+        width: 14.5rem;
+        border-radius: 9999px;
+        object-fit: cover;
     }
     
 `
 
 export const ContainerDescription = styled.div`
-    width: 70%;
+    width: 65%;
     height: 100%;
 
     display: flex;
