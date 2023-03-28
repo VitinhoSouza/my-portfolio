@@ -9,7 +9,7 @@ export function Home() {
         <img src={personalImage} alt="Victor" />
       </ContainerImage>
       <ContainerDescription className="description">
-        <h1>Quem sou eu?</h1>
+        <h1>{description.question}</h1>
         <p>{description.desc}</p>
       </ContainerDescription>
     </Container>

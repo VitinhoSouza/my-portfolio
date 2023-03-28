@@ -16,7 +16,7 @@ export function Header({ toggleTheme }: IHeaderProps) {
   return (
     <Container>
       <PersonalData>
-        <span className="title">Victor Souza</span>
+        <span className="title">Vitinho</span>
         <span>Web Developer (Frontend)</span>
       </PersonalData>
 

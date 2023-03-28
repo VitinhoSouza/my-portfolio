@@ -10,7 +10,7 @@ import { Container, Copyright, SocialNetworks } from "./styles";
 export function Footer() {
   return (
     <Container>
-      <Copyright>Copyright © 2022 VitinhoSouza. All Rights Reserved</Copyright>
+      <Copyright>Copyright © 2022 VitinhoDev. All Rights Reserved</Copyright>
       <SocialNetworks>
         <a href="https://github.com/VitinhoSouza" style={{ color: "white" }}>
           <GithubLogo size="2rem" alt="Github" />

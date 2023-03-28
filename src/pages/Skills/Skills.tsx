@@ -13,8 +13,8 @@ export function Skills() {
         <InfoSkills key={skill.title}>
           <h2>{skill.title}</h2>
           <ul>
-            {skill.topics.map((item: string) => (
-              <li key={item}>{item}</li>
+            {skill.topics.map((item: string, index) => (
+              <li key={item}>{item}{index === skill.topics.length - 1 ? '.' : ';'}</li>
             ))}
           </ul>
         </InfoSkills>
