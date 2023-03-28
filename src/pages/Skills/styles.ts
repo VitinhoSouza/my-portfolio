@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 
 export const Container = styled.main`
-    height: 65vh;
+    min-height: 65vh;
     width: 100%;
+    padding: 2rem 0;
 
     display: flex;
     justify-content: center;
@@ -10,7 +11,6 @@ export const Container = styled.main`
 
     @media(max-width:550px){
         flex-direction: column;
-        height: 85vh;
         div{
             width: 100%;
             padding-top: 1rem;
@@ -29,10 +29,18 @@ export const InfoSkills = styled.div`
     justify-content: space-evenly;
     align-items: center;
 
+    h2{
+        margin-bottom: 1rem;
+    }
+
     ul{
         width: 80%;
         li{
             font-size: 1.2rem;
         }
+    }
+
+    &:last-child{
+        margin-top: 2rem;
     }
 `

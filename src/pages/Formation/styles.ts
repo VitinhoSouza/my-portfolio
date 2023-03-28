@@ -1,17 +1,14 @@
 import styled from 'styled-components';
 
 export const Container = styled.main`
-    height: 65vh;
+    min-height: 65vh;
     width: 100%;
+    padding: 2rem 0;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    @media(max-width:700px){
-        height: 75vh;
-    }
 `
 
 export const InfoEducationOrExperience = styled.div`
@@ -25,6 +22,7 @@ export const InfoEducationOrExperience = styled.div`
 
     h2{
         text-align: center;
+        margin-bottom: 1rem;
     }
 
     ul{
@@ -32,5 +30,9 @@ export const InfoEducationOrExperience = styled.div`
         li{
             font-size: 1.2rem;
         }
+    }
+
+    &:last-child{
+        margin-top: 2rem;
     }
 `

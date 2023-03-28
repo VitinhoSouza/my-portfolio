@@ -1,16 +1,16 @@
 import styled from 'styled-components';
 
 export const Container = styled.main`
-    height: 65vh;
+    min-height: 65vh;
     width: 100%;
+    padding: 2rem 0;
 
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 
     @media(max-width:550px){
         flex-direction: column;
-        height: 70vh;
         .image{
             width: 100%;
             height: 45%;
@@ -22,7 +22,7 @@ export const Container = styled.main`
         .description{
             width: 100%;
             height: 55%;
-            p{
+            > p{
                 font-size: 1.3rem;
             }
         }
@@ -60,6 +60,7 @@ export const ContainerDescription = styled.div`
     p{
         font-size: 1.5rem;
         width: 90%;
+        margin-top: 2rem;
     }
 `
 
