@@ -3,6 +3,8 @@ import { RepoCard } from "../../components/RepoCard/RepoCard";
 
 import { Container } from "./styles";
 
+import loader from "../../assets/loader.gif";
+
 const blockRepos = ["VitinhoSouza"];
 
 export function Projects() {
@@ -23,14 +25,19 @@ export function Projects() {
 
   return (
     <Container>
-      {projects.map((project: any) => (
-        <RepoCard
-          description={project.description}
-          link={project.html_url}
-          title={project.name}
-          key={project.id}
-        />
-      ))}
+      {projects.length === 0 ? (
+        <img src={loader}/>
+      ):(
+        projects.map((project: any) => (
+          <RepoCard
+            description={project.description}
+            link={project.html_url}
+            title={project.name}
+            key={project.id}
+          />
+        ))
+      )}
+      
     </Container>
   );
 }
