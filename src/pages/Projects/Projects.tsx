@@ -15,7 +15,7 @@ export function Projects() {
       .then((data) => data.json())
       .then((repos) => {
         let publicRepos: any = [];
-        repos.map((repo: any) => {
+        repos.forEach((repo: any) => {
           if (!blockRepos.includes(repo.name)) publicRepos.push(repo);
         });
         setProjects(publicRepos);
@@ -26,7 +26,7 @@ export function Projects() {
   return (
     <Container>
       {projects.length === 0 ? (
-        <img src={loader}/>
+        <img src={loader} alt="loader with dots"/>
       ):(
         projects.map((project: any) => (
           <RepoCard

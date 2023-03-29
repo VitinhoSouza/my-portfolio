@@ -1,5 +1,7 @@
 import { Container } from "./styles";
 
+import projects from "../../assets/projects.json";
+
 interface IRepoCard {
   title: string;
   description: string | null;
@@ -10,18 +12,22 @@ export function RepoCard({ description, link, title }: IRepoCard) {
   return (
     <Container>
       <h3>{title}</h3>
+
       <span
         title={
-          description !== null && description.length > 120
+          description !== null && description.length > 110
             ? description
             : ""
         }
       >
-        {description !== null && description.length > 120
-          ? description.slice(0, 120) + "..."
+        {description !== null && description.length > 110
+          ? description.slice(0, 110) + "..."
           : description}
       </span>
-      <a href={link}>Visit on Github</a>
+      
+      <a href={link} target="_blank" rel="noreferrer">
+        {projects.visitOnGithub}
+      </a>
     </Container>
   );
 }

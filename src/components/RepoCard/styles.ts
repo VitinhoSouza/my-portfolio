@@ -3,10 +3,11 @@ import styled from 'styled-components';
 export const Container = styled.main`
     background: black;
 
-    height: 10rem;
+    height: 11rem;
     width: 20rem;
 
-    margin: 0.5rem 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
 
     display: flex;
     flex-direction: column;
@@ -16,6 +17,13 @@ export const Container = styled.main`
 
     background: ${props => props.theme.colors.background_card};
     color: ${props => props.theme.colors.text_card};
+
+    h3{
+        font-weight: 700;
+    }
+
+    span{
+    }
 
     a{
         color:${props => props.theme.colors.text_card};

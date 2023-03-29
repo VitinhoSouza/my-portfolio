@@ -40,7 +40,10 @@ export const InfoSkills = styled.div`
         }
     }
 
-    &:last-child{
-        margin-top: 2rem;
+    @media(max-width:550px){
+        &:last-child{
+            margin-top: 2rem;
+        }
     }
+    
 `
