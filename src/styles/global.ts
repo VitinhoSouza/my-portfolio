@@ -31,6 +31,20 @@ export default createGlobalStyle`
         }
     }
 
+    body::-webkit-scrollbar {
+        width: 12px;               /* width of the entire scrollbar */
+    }
+
+    body::-webkit-scrollbar-track {
+        background: #d3d3d3;     /* color of the tracking area */
+    }
+
+    body::-webkit-scrollbar-thumb {
+        background-color: ${props => props.theme.colors.primary}; /* color of the scroll thumb */
+        border-radius: 10px;       /* roundness of the scroll thumb */
+        border: 2px solid #d3d3d3;  
+    }
+
     html{
         @media(max-width:880px){
             font-size: 95%;
