@@ -14,6 +14,8 @@ import { Skills } from "./pages/Skills/Skills";
 import { Projects } from "./pages/Projects/Projects";
 import { NotFound } from "./pages/NotFound/NotFound";
 
+import "./translate/i18n";
+
 function App() {
   const [theme, setTheme] = usePersistedState<DefaultTheme>("theme", light);
 

@@ -8,12 +8,11 @@ export const Container = styled.header`
     justify-content: space-evenly;
     align-items: center;
 
-    font-weight: bold;
-
     background: ${props => props.theme.colors.primary};
     color: ${props => props.theme.colors.text_primary};
-    font-family:Koulen;
-    font-weight: 400;
+    font-family:Oswald;
+    text-transform: uppercase;
+    font-weight: 600;
 
     position: relative;
 
@@ -57,7 +56,7 @@ export const PersonalData = styled.div`
         font-size: 2.5rem;
     }
 
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 
     display: flex;
     flex-direction: column;
