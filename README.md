@@ -12,6 +12,7 @@ https://user-images.githubusercontent.com/51724518/169703365-2851d4f7-cddb-4ed9-
 - React Router Dom for route redirection;
 - The “phosphor-react” library for using icons;
 - The "react-switch" library for using the theme switch component;
+- The "i18next" for software internationalization;
 - LocaStorage for save the user's theme preference to the browser, which by default is light.
 
 ## Get started:
