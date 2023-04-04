@@ -4,7 +4,7 @@ export const Container = styled.footer`
     width: 100vw;
     height: 15vh;
 
-    font-family:Koulen;
+    font-family: Oswald;
     font-weight: 400;
 
     display: flex;
