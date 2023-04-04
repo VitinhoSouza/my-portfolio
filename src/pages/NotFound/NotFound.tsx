@@ -1,4 +1,9 @@
+import { useTranslation } from "react-i18next";
+
 export function NotFound() {
+
+  const { t } = useTranslation('notFound');
+
   return (
     <h1
       style={{
@@ -7,9 +12,10 @@ export function NotFound() {
         justifyContent: "center",
         display: "flex",
         alignItems: "center",
+        fontFamily:"Oswald"
       }}
     >
-      <p>Página não encontrada!</p>
+      <p>{t('message')}</p>
     </h1>
   );
 }

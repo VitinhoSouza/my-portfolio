@@ -61,10 +61,10 @@ const messages = {
             visitOnGithub:"Visite no Github"
         },
         footer:{
-
+            copyright: "Copyright © 2022 VitinhoDev. Todos os direitos reservados"
         },
         notFound:{
-            
+            message:"Página não encontrada!"
         }
     }
 }

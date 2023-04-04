@@ -6,11 +6,15 @@ import {
 } from "phosphor-react";
 
 import { Container, Copyright, SocialNetworks } from "./styles";
+import { useTranslation } from "react-i18next";
 
 export function Footer() {
+
+  const { t } = useTranslation('footer');
+
   return (
     <Container>
-      <Copyright>Copyright © 2022 VitinhoDev. All Rights Reserved</Copyright>
+      <Copyright>{t('copyright')}</Copyright>
       <SocialNetworks>
         <a
           href="https://github.com/VitinhoSouza"
