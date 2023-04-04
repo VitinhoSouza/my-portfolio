@@ -1,6 +1,5 @@
+import { useTranslation } from "react-i18next";
 import { Container } from "./styles";
-
-import projects from "../../assets/projects.json";
 
 interface IRepoCard {
   title: string;
@@ -9,6 +8,9 @@ interface IRepoCard {
 }
 
 export function RepoCard({ description, link, title }: IRepoCard) {
+
+  const { t } = useTranslation('projects');
+
   return (
     <Container>
       <h3>{title}</h3>
@@ -26,7 +28,7 @@ export function RepoCard({ description, link, title }: IRepoCard) {
       </span>
       
       <a href={link} target="_blank" rel="noreferrer">
-        {projects.visitOnGithub}
+        {t('visitOnGithub')}
       </a>
     </Container>
   );

@@ -25,11 +25,40 @@ const messages = {
                 2:"Scholarship holder in the Scholarship of Academic Initiation of the UFC - Quixadá (2018 - 2019)",
                 3:"Scholarship holder in the Tutorial Education Program - Information Systems (2019 - 2021)",
                 4:"Internship as Front End Developer (ReactJS) at Lead Dell (2021-2022)",
-                5:"Desenvolvedor Frontend (ReactJS) Jr. na APP Noz (2022 - Atualmente)"
+                5:"Frontend Developer Jr. (ReactJS) at APP Noz (2022 - At the moment)"
             }
         },
         skills:{
-
+            hardSkills: "Hard Skills",
+            hardSkillsTopics: {
+                1:"JavaScript and TypeScript",
+                2:"HTML, CSS, Sass, Styled Components, Bootstrap, (responsive design) and Figma (basic)",
+                3:"ReactJS (Redux, Saga, Hooks, Form, Performance, ContextAPI etc.) and major related libraries.",
+                4:"Unitary tests (Jest and Testing Library)",
+                5:"Component documentation (Storybook)",
+                6:"Next.js basics",
+                7:"HTTP and API integration",
+                8:"Node.js and Database (basic)",
+                9:"Git and SCRUM",
+                10:"Intermediary English",
+            },
+            softSkills: "Soft Skills",
+            softSkillsTopics: {
+                1:"Organization",
+                2:"Determination",
+                3:"Results oriented",
+                4:"Communication",
+                5:"Team work",
+                6:"Problem solving",
+                7:"Responsibility",
+                8:"Commitment",
+                9:"Ethic",
+                10:"Empathy",
+                11:"Flexibility"
+            }
+        },
+        projects:{
+            visitOnGithub:"Visit on Github"
         },
         footer:{
 
