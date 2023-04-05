@@ -1,5 +1,9 @@
 import styled from 'styled-components';
 
+import IconArrow from "../../assets/arrow-bottom.svg";
+
+const iconArrowBottom = `url(${IconArrow})`;
+
 export const Container = styled.header`
     width: 100vw;
     height: 20vh;
@@ -17,7 +21,7 @@ export const Container = styled.header`
     position: relative;
 
     .toggleTheme{
-        margin-right: 0.5rem;
+        /* margin-right: 0.5rem; */
 
         .react-switch-bg{
             width: 3.5rem !important;
@@ -99,5 +103,51 @@ export const Menu = styled.nav`
     }
 `
 
+export const ThemeContainer = styled.div`
+    text-transform: none;
+    font-size: 0.8rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+`
+
+export const SwitchContainer = styled.div`
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+`
+export const LanguageContainer = styled.div`
+    text-transform: none;
+    font-size: 0.8rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+`
+
+export const SelectLanguage = styled.select`
+    width: 100%;
+    background-color: rgb(245, 247, 250);
+    background-image: ${iconArrowBottom};
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-position-x: 95%;
+    background-position-y: center;
+    color: rgb(51, 57, 71);
+    font-family: Oswald;
+    border-radius: 8px;
+    padding: 8px 16px 8px 8px;
+    line-height: 24px;
+    appearance: none;
+    
+    &:hover: {
+      cursor: "pointer",
+    }
+`
 
 

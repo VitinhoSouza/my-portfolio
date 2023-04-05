@@ -5,7 +5,8 @@ const messages = {
             homeTitle:"Sobre mim",
             formationTitle:"Formação",
             skillsTitle:"Habilidades",
-            projectsTitle:"Projetos"
+            projectsTitle:"Projetos",
+            language:"Idioma"
         },
         home:{
             whoAmI: "Quem sou eu?",
