@@ -14,7 +14,8 @@ import {
   ThemeContainer,
   SwitchContainer,
   LanguageContainer,
-  SelectLanguage
+  SelectLanguage,
+  ThemeAndLanguageContainer
 } from "./styles";
 
 interface IHeaderProps {
@@ -51,33 +52,35 @@ export function Header({ toggleTheme }: IHeaderProps) {
         <NavLink to="/projects">{t("projectsTitle")}</NavLink>
       </Menu>
 
-      <ThemeContainer>
-        <span>{title === "dark" ? "Dark" : "Light"}</span>
+      <ThemeAndLanguageContainer>
+        <ThemeContainer>
+          <span>{title === "dark" ? "Dark" : "Light"}</span>
 
-        <SwitchContainer>
-          <Sun size="1.2rem"/>
-          <Switch
-            className={title === "dark" ? "toggleTheme active" : "toggleTheme"}
-            onChange={toggleTheme}
-            checked={title === "dark"}
-            checkedIcon={false}
-            uncheckedIcon={false}
-            handleDiameter={22}
-            offColor={colors.background}
-            onColor={shade(0.4, colors.primary)}
-          />
-          <Moon size="1.2rem"/>
-        </SwitchContainer>
+          <SwitchContainer>
+            <Sun size="1.2rem"/>
+            <Switch
+              className={title === "dark" ? "toggleTheme active" : "toggleTheme"}
+              onChange={toggleTheme}
+              checked={title === "dark"}
+              checkedIcon={false}
+              uncheckedIcon={false}
+              handleDiameter={22}
+              offColor={colors.background}
+              onColor={shade(0.4, colors.primary)}
+            />
+            <Moon size="1.2rem"/>
+          </SwitchContainer>
 
-      </ThemeContainer>
+        </ThemeContainer>
 
-      <LanguageContainer>
-        <span>{t('language')}</span>
-        <SelectLanguage defaultValue={i18n.language} onChange={handleLanguage}>
-          <option value="pt">Português 🇧🇷</option>
-          <option value="en">English 🇺🇸</option>
-        </SelectLanguage>
-      </LanguageContainer>
+        <LanguageContainer>
+          <span>{t('language')}</span>
+          <SelectLanguage defaultValue={i18n.language} onChange={handleLanguage}>
+            <option value="pt">Português 🇧🇷</option>
+            <option value="en">English 🇺🇸</option>
+          </SelectLanguage>
+        </LanguageContainer>
+      </ThemeAndLanguageContainer>
     </Container>
   );
 }

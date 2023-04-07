@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.footer`
     width: 100vw;
-    height: 15vh;
+    padding: 1rem 0;
 
     font-family: Oswald;
     font-weight: 400;

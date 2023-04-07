@@ -6,7 +6,7 @@ const iconArrowBottom = `url(${IconArrow})`;
 
 export const Container = styled.header`
     width: 100vw;
-    height: 20vh;
+    padding: 0.5rem 0 1rem 0;
 
     display: flex;
     justify-content: space-evenly;
@@ -40,21 +40,14 @@ export const Container = styled.header`
         }
     }
 
-    @media(max-width:550px){
+    @media(max-width:675px){
         flex-direction: column;
-        height: 25vh;
-
-        .toggleTheme{
-            position: absolute !important;
-            right: 1rem;
-            top: 2.5rem;
-        }
+        gap: 1rem;
     }
 `
 
 export const PersonalData = styled.div`
     width: 18rem;
-    /* height: 55%; */
 
     .title{
         font-size: 2.5rem;
@@ -118,7 +111,7 @@ export const SwitchContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.3rem;
 `
 export const LanguageContainer = styled.div`
     text-transform: none;
@@ -145,8 +138,24 @@ export const SelectLanguage = styled.select`
     line-height: 24px;
     appearance: none;
     
-    &:hover: {
+    &:hover{
       cursor: "pointer",
+    }
+`
+
+export const ThemeAndLanguageContainer = styled.div`
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem 1rem 0.5rem 0;
+
+    @media(max-width:970px){
+        flex-direction: column;
+    }
+
+    @media(max-width:675px){
+        flex-direction: row-reverse;
+        gap: 4rem;
     }
 `
 

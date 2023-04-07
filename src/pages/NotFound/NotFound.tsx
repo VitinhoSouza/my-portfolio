@@ -8,7 +8,7 @@ export function NotFound() {
     <h1
       style={{
         width: "100%",
-        height: "65vh",
+        height: "69.9vh",
         justifyContent: "center",
         display: "flex",
         alignItems: "center",
