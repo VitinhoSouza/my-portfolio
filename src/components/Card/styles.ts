@@ -1,10 +1,15 @@
 import styled from 'styled-components';
 
-export const Container = styled.main`
+type CardContainerProps = {
+    width: string;
+    height: string;
+}
+
+export const Container = styled.main<CardContainerProps>`
     background: black;
 
-    height: 11rem;
-    width: 20rem;
+    height: ${props => props.height ? props.height : '11rem'};
+    width: ${props => props.width ? props.width : '20rem'};
 
     padding: 0.5rem 1rem;
     border-radius: 10px;

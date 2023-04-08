@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { RepoCard } from "../../components/RepoCard/RepoCard";
+import { Card } from "../../components/Card/Card";
 
 import { Container } from "./styles";
 
@@ -29,8 +29,9 @@ export function Projects() {
         <img src={loader} alt="loader with dots"/>
       ):(
         projects.map((project: any) => (
-          <RepoCard
+          <Card
             description={project.description}
+            descriptionLenght={110}
             link={project.html_url}
             title={project.name}
             key={project.id}

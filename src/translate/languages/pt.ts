@@ -22,11 +22,22 @@ const messages = {
             },
             practicalExperiences: "Experiências práticas",
             practicalExperiencesTopics:{
-                1:"Estagiário no Centro de Tecnologia da Informação na Unicatólica - Quixadá (2017)",
-                2:"Bolsista na Bolsa de Iniciação Acadêmica da UFC - Quixadá (2018 - 2019)",
-                3:"Bolsista no Programa de Educação Tutorial - Sistemas de Informação (2019 - 2021)",
-                4:"Estagiário como Desenvolvedor Frontend (ReactJS) no Lead Dell (2021-2022)",
-                5:"Desenvolvedor Frontend (ReactJS) Jr. na APP Noz (2022 - Atualmente)"
+                1:{
+                    title: "Estagiário no Centro de Tecnologia da Informação na Unicatólica - Quixadá (2017)",
+                    description: "Exercendo atividades relacionadas à técnico de informática."
+                },
+                2:{ 
+                    title: "Bolsista no Programa de Educação Tutorial - Sistemas de Informação (2019 - 2021)",
+                    description: "Criação e organização de projetos relacionados à tecnologia  que envolvem o âmbito acadêmico e municipal.  Ensino de Programação, Informática básica, entre outros temas."
+                },
+                3:{ 
+                    title: "Estagiário como Desenvolvedor Frontend (ReactJS) no Lead Dell (2021-2022)",
+                    description: "Desenvolvimento de interfaces de usuário com ReactJS, sendo as principais tecnologias utilizadas: Typescript, Redux/Saga, CSS, SASS, HTML; Consumo de API REST; Controle de versionamento com GIT; Metodologias Ágeis."
+                },
+                4:{
+                    title: "Desenvolvedor Frontend (ReactJS) Jr. na APP Noz (2022 - Atualmente)",
+                    description: "Construção e manutenção de interfaces de usuário com ReactJS (Functional/Class Components; HTML/CSS; Styled-Components; BootStrap; Redux/Saga; TypeScript; Documentação de componentes com StoryBook; Testes Unitários com Jest e Testing Library.); Controle de versionamento com GIT; Desenvolvimento ágil; *Mantendo projetos com milhares de usuários e atendendo suas necessidades*."
+                },
             }
         },
         skills:{
