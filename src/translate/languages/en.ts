@@ -31,11 +31,11 @@ const messages = {
                     description: "Creation and organization of projects related to technology involving the academic and municipal spheres. Teaching Programming, Basic Computing, among other topics."
                 },
                 3:{
-                    title: "Internship as Front End Developer (ReactJS) at Lead Dell (2021-2022)",
+                    title: "Intern as Front-end Developer (ReactJS) at Lead Dell (2021-2022)",
                     description: "Development of user interfaces with ReactJS, with the main technologies used: Typescript, Redux/Saga, CSS, SASS, HTML; REST API consumption; Versioning control with GIT; Agile Methodologies."
                 },
                 4:{
-                    title: "Frontend Developer Jr. (ReactJS) at APP Noz (2022 - At the moment)",
+                    title: "Front-end Developer Jr. (ReactJS) at APP Noz (2022 - At the moment)",
                     description: "Building and maintaining user interfaces with ReactJS (Functional/Class Components; HTML/CSS; Styled-Components; BootStrap; Redux/Saga; TypeScript; Component documentation with StoryBook; Unit Tests with Jest and Testing Library.); Versioning control with GIT; Agile development; *Maintaining projects with thousands of users and meeting their needs*."
                 },
             }
