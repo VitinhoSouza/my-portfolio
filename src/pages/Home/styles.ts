@@ -27,6 +27,10 @@ export const Container = styled.main`
             }
         }
     }
+
+    @media(max-width:675px){
+        height: 60vh;
+    }
 `
 
 export const ContainerImage = styled.div`
