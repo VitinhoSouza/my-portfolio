@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.footer`
     width: 100vw;
     padding: 1rem 0;
+    height: 10%;
 
     font-family: Oswald;
     font-weight: 400;
@@ -16,6 +17,7 @@ export const Container = styled.footer`
 
     @media(max-width:600px){
         flex-direction: column;
+        height: 15%;
     }
 `
 

@@ -6,6 +6,7 @@ const iconArrowBottom = `url(${IconArrow})`;
 
 export const Container = styled.header`
     width: 100vw;
+    min-height: 25%;
     padding: 0.5rem 0 1rem 0;
 
     display: flex;
@@ -43,6 +44,7 @@ export const Container = styled.header`
     @media(max-width:675px){
         flex-direction: column;
         gap: 1rem;
+        min-height: 35%;
     }
 `
 

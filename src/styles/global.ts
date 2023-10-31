@@ -12,7 +12,15 @@ export default createGlobalStyle`
         background: ${props => props.theme.colors.background};
 
         #root{
-            min-height: 100vh;
+            height: 100vh;
+
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+
+            main{
+                flex-grow: 1;
+            }
         }
 
         height: 100vh;
@@ -35,15 +43,15 @@ export default createGlobalStyle`
         }
     }
 
-    body::-webkit-scrollbar {
+    body>#root::-webkit-scrollbar {
         width: 12px;               /* width of the entire scrollbar */
     }
 
-    body::-webkit-scrollbar-track {
+    body>#root::-webkit-scrollbar-track {
         background: #d3d3d3;     /* color of the tracking area */
     }
 
-    body::-webkit-scrollbar-thumb {
+    body>#root::-webkit-scrollbar-thumb {
         background-color: ${props => props.theme.colors.primary}; /* color of the scroll thumb */
         border-radius: 10px;       /* roundness of the scroll thumb */
         border: 2px solid #d3d3d3;  

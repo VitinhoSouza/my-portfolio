@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const Container = styled.main`
-    min-height: 79.8vh;
     width: 100%;
     padding: 2rem 0;
 
@@ -11,6 +10,7 @@ export const Container = styled.main`
 
     @media(max-width:550px){
         flex-direction: column;
+        min-height: 70%;
         .image{
             width: 100%;
             height: 45%;
@@ -28,9 +28,6 @@ export const Container = styled.main`
         }
     }
 
-    @media(max-width:675px){
-        height: 60vh;
-    }
 `
 
 export const ContainerImage = styled.div`

@@ -5,7 +5,7 @@ type CardContainerProps = {
     height: string;
 }
 
-export const Container = styled.main<CardContainerProps>`
+export const Container = styled.div<CardContainerProps>`
     background: black;
 
     height: ${props => props.height ? props.height : '11rem'};
