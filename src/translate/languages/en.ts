@@ -10,7 +10,7 @@ const messages = {
         },
         home:{
             whoAmI: "who am I?",
-            description: "Hello, my name is Victor Souza, I'm 23 years old and I live in Quixadá - CE. I'm a WEB developer (focused on Frontend) and I'm always looking to evolve as a person and as a professional. I am a responsible young man, organized and determined to reach my goals.",
+            description: "Hello, I've been a front-end developer for over 3 years, motivated by challenges and problem solving 🧑🏽‍💻. In my experiences, I have always sought a protagonist role, from which I was able to extract several soft and hard skills 📚. I am always looking to evolve as a person and as a professional. I am a responsible, organized and determined young man to achieve my goals 🎯.",
         },
         formation:{
             academicEducation: "Academic Education",
@@ -35,8 +35,12 @@ const messages = {
                     description: "Development of user interfaces with ReactJS, with the main technologies used: Typescript, Redux/Saga, CSS, SASS, HTML; REST API consumption; Versioning control with GIT; Agile Methodologies."
                 },
                 4:{
-                    title: "Front-end Developer Jr. (ReactJS) at APP Noz (2022 - At the moment)",
+                    title: "Front-end Developer Jr. (ReactJS) at APP Noz (2022 - 2023)",
                     description: "Building and maintaining user interfaces with ReactJS (Functional/Class Components; HTML/CSS; Styled-Components; BootStrap; Redux/Saga; TypeScript; Component documentation with StoryBook; Unit Tests with Jest and Testing Library.); Versioning control with GIT; Agile development; *Maintaining projects with thousands of users and meeting their needs*."
+                },
+                5:{
+                    title: "Front-end Developer Pl. (ReactJS) at Intmed (2023 - At the moment)",
+                    description: "Construction of user interfaces with ReactJS (HTML/CSS; Styled-Components; ContextAPI; TypeScript, among others); Versioning control with GIT; Agile development."
                 },
             }
         },

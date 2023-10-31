@@ -11,6 +11,10 @@ export default createGlobalStyle`
         color: ${props => props.theme.colors.text_background};
         background: ${props => props.theme.colors.background};
 
+        #root{
+            min-height: 100vh;
+        }
+
         height: 100vh;
         width: 100%;
 

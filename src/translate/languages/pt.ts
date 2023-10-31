@@ -10,7 +10,7 @@ const messages = {
         },
         home:{
             whoAmI: "Quem sou eu?",
-            description: "Olá, meu nome é Victor Souza, tenho 23 anos de idade e moro em Quixadá - CE. Sou um desenvolvedor WEB (com foco em Frontend) e busco sempre evoluir como pessoa e como profissional. Sou um jovem responsável, organizado e determinado em alcançar minhas metas.",
+            description: "Olá, sou desenvolvedor front-end há mais de 3 anos, motivado por desafios e resolução de problemas 🧑🏽‍💻. Em minhas experiências, sempre busquei um papel de protagonista, nas quais pude extrair várias soft e hard skills 📚. Estou sempre buscando sempre evoluir como pessoa e como profissional. Sou um jovem responsável, organizado e determinado em alcançar minhas metas 🎯.",
         },
         formation:{
             academicEducation: "Formação Acadêmica",
@@ -35,8 +35,12 @@ const messages = {
                     description: "Desenvolvimento de interfaces de usuário com ReactJS, sendo as principais tecnologias utilizadas: Typescript, Redux/Saga, CSS, SASS, HTML; Consumo de API REST; Controle de versionamento com GIT; Metodologias Ágeis."
                 },
                 4:{
-                    title: "Desenvolvedor Front-end (ReactJS) Jr. na APP Noz (2022 - Atualmente)",
+                    title: "Desenvolvedor Front-end (ReactJS) Jr. na APP Noz (2022 - 2023)",
                     description: "Construção e manutenção de interfaces de usuário com ReactJS (Functional/Class Components; HTML/CSS; Styled-Components; BootStrap; Redux/Saga; TypeScript; Documentação de componentes com StoryBook; Testes Unitários com Jest e Testing Library.); Controle de versionamento com GIT; Desenvolvimento ágil; *Mantendo projetos com milhares de usuários e atendendo suas necessidades*."
+                },
+                5:{
+                    title: "Desenvolvedor Front-end (ReactJS) Pleno na Intmed (2023 - Atualmente)",
+                    description: "Construção de interfaces de usuário com ReactJS (HTML/CSS; Styled-Components; ContextAPI; TypeScript, entre outros); Controle de versionamento com GIT; Desenvolvimento ágil."
                 },
             }
         },

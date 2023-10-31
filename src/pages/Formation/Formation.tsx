@@ -36,7 +36,7 @@ export function Formation() {
         <h2>{t("practicalExperiences")}</h2>
 
         <InfoExperience>
-          {[1, 2, 3, 4].map((number) => (
+          {[1, 2, 3, 4, 5].map((number) => (
             <Card
               key={t(`practicalExperiencesTopics.${number}`)}
               description={t(
