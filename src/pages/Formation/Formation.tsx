@@ -12,23 +12,22 @@ import {
 export function Formation() {
   const { t } = useTranslation("formation");
 
+  const academicEducationTopics = t("academicEducationTopics")?.split(';');
+
   return (
     <Container>
       <InfoEducation key={t("academicEducation")}>
         <h2>{t("academicEducation")}</h2>
         <ul>
-          <li key={t("academicEducationTopics.1")}>
-            {t("academicEducationTopics.1")}
-          </li>
-          <li key={t("academicEducationTopics.2")}>
-            {t("academicEducationTopics.2")}
-          </li>
-          <li key={t("academicEducationTopics.3")}>
-            {t("academicEducationTopics.3")}
-          </li>
-          <li key={t("academicEducationTopics.4")}>
-            {t("academicEducationTopics.4")}
-          </li>
+          {academicEducationTopics?.map((topic) => (
+            <Card
+              key={topic}
+              title={topic}
+              description={null}
+              descriptionLenght={0}
+              width="25rem"
+            />
+          ))}
         </ul>
       </InfoEducation>
 

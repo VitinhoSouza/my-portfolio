@@ -10,7 +10,7 @@ export const Container = styled.main`
     align-items: center;
 `
 
-export const InfoEducation= styled.div`
+export const InfoEducation = styled.div`
     height: 50%;
     width: 100%;
 
@@ -25,10 +25,12 @@ export const InfoEducation= styled.div`
     }
 
     ul{
-        max-width: 80%;
-        li{
-            font-size: 1.2rem;
-        }
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+        max-width: 90%;
     }
 
     &:last-child{
