@@ -16,6 +16,6 @@ https://user-images.githubusercontent.com/51724518/169703365-2851d4f7-cddb-4ed9-
 - LocaStorage for save the user's theme preference to the browser, which by default is light.
 
 ## Get started:
-- Open the terminal inside the project folder and do: 'npm install' or 'yarn add'. When all packages are installed, do 'npm dev' or 'yarn dev' to start in development mode.
+- Open the terminal inside the project folder and do: `npm install` or `yarn`. When all packages are installed, do `npm start` or `yarn start` to start in development mode.
 - To view the currently deployed version, visit: https://my-portfolio-vitinho.vercel.app/.
 
