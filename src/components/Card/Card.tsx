@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { Container } from "./styles";
+import { ReactNode } from "react";
 
 interface IRepoCard {
   title: string;
@@ -8,6 +9,7 @@ interface IRepoCard {
   link?: string;
   width?: string;
   height?: string;
+  children?: ReactNode;
 }
 
 export function Card({
@@ -17,8 +19,20 @@ export function Card({
   descriptionLenght,
   width,
   height,
+  children,
 }: IRepoCard) {
   const { t } = useTranslation("projects");
+
+  if (!!children) {
+    return (
+      <Container
+        width={!!width ? width : "auto"}
+        height={!!height ? height : "auto"}
+      >
+        {children}
+      </Container>
+    );
+  }
 
   return (
     <Container width={!!width ? width : ""} height={!!height ? height : ""}>

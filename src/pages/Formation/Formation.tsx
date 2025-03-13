@@ -12,7 +12,7 @@ import {
 export function Formation() {
   const { t } = useTranslation("formation");
 
-  const academicEducationTopics = t("academicEducationTopics")?.split(';');
+  const academicEducationTopics = t("academicEducationTopics")?.split(";");
 
   return (
     <Container>

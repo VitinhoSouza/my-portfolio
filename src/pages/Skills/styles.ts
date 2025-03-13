@@ -1,48 +1,48 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.main`
-    width: 100%;
-    padding: 2rem 0;
+  width: 100%;
+  padding: 2rem 0;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    @media(max-width:550px){
-        flex-direction: column;
-        div{
-            width: 100%;
-            padding-top: 1rem;
-        }
-    }
-`
+  @media (max-width: 980px) {
+    flex-direction: column;
+  }
+`;
 
 export const InfoSkills = styled.div`
-    height: 100%;
-    width: 50%;
+  height: 100%;
+  width: 50%;
 
-    /* background: lime; */
+  /* background: lime; */
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 
-    h2{
-        margin-bottom: 1rem;
+  h2 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  > div {
+    margin: auto 0;
+    height: 80%;
+  }
+
+  ul {
+    width: 80%;
+    li {
+      font-size: 1.2rem;
     }
+  }
 
-    ul{
-        width: 80%;
-        li{
-            font-size: 1.2rem;
-        }
-    }
-
-    @media(max-width:550px){
-        &:last-child{
-            margin-top: 2rem;
-        }
-    }
-    
-`
+  @media (max-width: 980px) {
+    width: 80%;
+    height: 30rem;
+  }
+`;
