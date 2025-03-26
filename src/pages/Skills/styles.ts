@@ -36,8 +36,11 @@ export const InfoSkills = styled.div`
 
   ul {
     width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
     li {
-      font-size: 1.2rem;
+      font-size: 1.3rem;
     }
   }
 
