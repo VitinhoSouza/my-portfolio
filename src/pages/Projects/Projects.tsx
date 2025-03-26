@@ -11,7 +11,7 @@ export function Projects() {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    fetch("https://api.github.com/users/VitinhoSouza/repos")
+    fetch(`https://api.github.com/users/${blockRepos}/repos?per_page=100`)
       .then((data) => data.json())
       .then((repos) => {
         let publicRepos: any = [];
@@ -26,8 +26,8 @@ export function Projects() {
   return (
     <Container>
       {projects.length === 0 ? (
-        <img src={loader} alt="loader with dots"/>
-      ):(
+        <img src={loader} alt="loader with dots" />
+      ) : (
         projects.map((project: any) => (
           <Card
             description={project.description}
@@ -38,7 +38,6 @@ export function Projects() {
           />
         ))
       )}
-      
     </Container>
   );
 }
