@@ -6,7 +6,7 @@ const iconArrowBottom = `url(${IconArrow})`;
 
 export const Container = styled.header`
     width: 100vw;
-    min-height: 25%;
+    height: 7rem;
     padding: 0.5rem 0 1rem 0;
 
     display: flex;
@@ -44,7 +44,7 @@ export const Container = styled.header`
     @media(max-width:675px){
         flex-direction: column;
         gap: 1rem;
-        min-height: 35%;
+        min-height: 16rem;
     }
 `
 
@@ -52,10 +52,10 @@ export const PersonalData = styled.div`
     width: 18rem;
 
     .title{
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
 
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 
     display: flex;
     flex-direction: column;
@@ -83,7 +83,6 @@ export const Menu = styled.nav`
         :hover{
             transition: 0.2s filter linear;
             filter: brightness(0.75);
-            /* margin-bottom: 0.5rem; */
             border-bottom: 0.1rem solid ${props => props.theme.colors.text_primary};
         }
     }
@@ -130,14 +129,14 @@ export const SelectLanguage = styled.select`
     background-color: rgb(245, 247, 250);
     background-image: ${iconArrowBottom};
     background-repeat: no-repeat;
-    background-size: 10px;
+    background-size: 0.625rem;
     background-position-x: 95%;
     background-position-y: center;
     color: rgb(51, 57, 71);
     font-family: Oswald;
-    border-radius: 8px;
-    padding: 8px 16px 8px 8px;
-    line-height: 24px;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem 0.5rem 0.5rem;
+    line-height: 2rem;
     appearance: none;
     
     &:hover{
@@ -152,7 +151,7 @@ export const ThemeAndLanguageContainer = styled.div`
     padding: 0.5rem 1rem 0.5rem 0;
 
     @media(max-width:970px){
-        flex-direction: column;
+     gap: 0.5rem;
     }
 
     @media(max-width:675px){
