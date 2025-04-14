@@ -30,7 +30,7 @@ export const InfoEducation = styled.div`
         justify-content: center;
         gap: 1rem;
         flex-wrap: wrap;
-        max-width: 90%;
+        max-width: 95%;
     }
 
     &:last-child{

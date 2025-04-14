@@ -15,38 +15,38 @@ const messages = {
     },
     formation: {
       academicEducation: "Academic Education",
-      academicEducationTopics: `Elementary School at EEF Renato de Araújo Carneiro (Completed in 2014);
-                High School and Technical Course in Informatics at EEEP Maria Cavalcante Costa (2015 - 2017);
-                Bachelor's Degree (Summa Cum Laude) in Information Systems at UFC - Quixadá (2018 - 2022) ⭐;
-                Ignite Training at Rocketseat - ReactJS Trails (2022 - 2023);
-                JStack Training - Node.js, ReactJS and React Native (2024 - Present)`,
+      academicEducationTopics: `Elementary School at EEF Renato de Araújo Carneiro (2014) ✔️;
+                High School and Technical Course in Informatics at EEEP Maria Cavalcante Costa (2015 - 2017) ✔️;
+                Bachelor's Degree (Summa Cum Laude ⭐) in Information Systems at UFC - Quixadá (2018 - 2022) 🎓;
+                Ignite Training at Rocketseat - ReactJS Trails (2022 - 2023) 👨‍💻;
+                JStack Training - Node.js, ReactJS and React Native (2024 - Present) 👨‍💻`,
       practicalExperiences: "Practical Experiences",
       practicalExperiencesTopics: {
         1: {
           title:
-            "Intern at the Information Technology Center at Unicatólica - Quixadá (2017)",
+            "Intern at the Information Technology Center at Unicatólica - Quixadá (2017) 👨‍🔧",
           description: "Performing activities related to Computer Technician.",
         },
         2: {
           title:
-            "Scholarship holder in the Tutorial Education Program - Information Systems (2019 - 2021)",
+            "Scholarship holder in the Tutorial Education Program - Information Systems (2019 - 2021) 👨‍🏫",
           description:
             "Creation and organization of projects related to technology involving the academic and municipal spheres. Teaching Programming, Basic Computing, among other topics.",
         },
         3: {
           title:
-            "Intern as Front-end Developer (ReactJS) at Lead Dell (2021-2022)",
+            "Intern as Front-end Developer (ReactJS) at Lead Dell (2021-2022) 👨‍💻",
           description:
             "Development of user interfaces with ReactJS, with the main technologies used: Typescript, Redux/Saga, CSS, SASS, HTML; REST API consumption; Versioning control with GIT; Agile Methodologies.",
         },
         4: {
-          title: "Front-end Developer Jr. (ReactJS) at APP Noz (2022 - 2023)",
+          title: "Front-end Developer Jr. (ReactJS) at APP Noz (2022 - 2023) 👨‍💻",
           description:
             "Building and maintaining user interfaces with ReactJS (Functional/Class Components; HTML/CSS; Styled-Components; BootStrap; Redux/Saga; TypeScript; Component documentation with StoryBook; Unit Tests with Jest and Testing Library.); Versioning control with GIT; Agile development; *Maintaining projects with thousands of users and meeting their needs*.",
         },
         5: {
           title:
-            "Front-end Developer Pl. (ReactJS) at Intmed (2023 - At the moment)",
+            "Front-end Developer Pl. (ReactJS) at Intmed (2023 - At the moment) 👨‍💻",
           description:
             "Construction of user interfaces with ReactJS (HTML/CSS; Styled-Components; ContextAPI; TypeScript, among others); Versioning control with GIT; Agile development.",
         },

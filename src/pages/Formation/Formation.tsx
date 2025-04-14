@@ -41,8 +41,8 @@ export function Formation() {
               ) || undefined}
               title={t(`practicalExperiencesTopics.${number}.title`)}
               descriptionLenght={400}
-              width="25rem"
-              height="18rem"
+              width="24.85rem"
+              height="19rem"
             />
           ))}
         </InfoExperience>

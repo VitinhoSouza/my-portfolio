@@ -15,40 +15,40 @@ const messages = {
     },
     formation: {
       academicEducation: "Formação acadêmica",
-      academicEducationTopics: `Ensino Fundamental na EEF Renato de Araújo Carneiro (Término em 2014);
-                Ensino Médio e Curso Técnico em Informática na EEEP Maria Cavalcante Costa (2015 - 2017);
-                Bacharelado (Summa Cum Laude) em Sistemas de Informação na UFC - Quixadá (2018 - 2022) ⭐;
-                Formação Ignite na Rocketseat - Trilhas de ReactJS (2022 - 2023);
-                Formação JStack - Node.js, ReactJS e React Native (2024 - Atualmente)`,
+      academicEducationTopics: `Ensino Fundamental na EEF Renato de Araújo Carneiro (2014) ✔️;
+                Ensino Médio e Curso Técnico em Informática na EEEP Maria Cavalcante Costa (2015 - 2017) ✔️;
+                Bacharelado (Summa Cum Laude ⭐) em Sistemas de Informação na UFC - Quixadá (2018 - 2022) 🎓;
+                Formação Ignite na Rocketseat - Trilhas de ReactJS (2022 - 2023) 👨‍💻;
+                Formação JStack - Node.js, ReactJS e React Native (2024 - Atualmente) 👨‍💻`,
       practicalExperiences: "Experiências práticas",
       practicalExperiencesTopics: {
         1: {
           title:
-            "Estagiário no Centro de Tecnologia da Informação na Unicatólica - Quixadá (2017)",
+            "Estagiário no Centro de Tecnologia da Informação na Unicatólica - Quixadá (2017) 👨‍🔧",
           description:
             "Exercendo atividades relacionadas à técnico de informática.",
         },
         2: {
           title:
-            "Bolsista no Programa de Educação Tutorial - Sistemas de Informação (2019 - 2021)",
+            "Bolsista no Programa de Educação Tutorial - Sistemas de Informação (2019 - 2021) 👨‍🏫",
           description:
             "Criação e organização de projetos relacionados à tecnologia  que envolvem o âmbito acadêmico e municipal.  Ensino de Programação, Informática básica, entre outros temas.",
         },
         3: {
           title:
-            "Estagiário como Desenvolvedor Front-end (ReactJS) no Lead Dell (2021-2022)",
+            "Estagiário como Desenvolvedor Front-end (ReactJS) no Lead Dell (2021-2022) 👨‍💻",
           description:
             "Desenvolvimento de interfaces de usuário com ReactJS, sendo as principais tecnologias utilizadas: Typescript, Redux/Saga, CSS, SASS, HTML; Consumo de API REST; Controle de versionamento com GIT; Metodologias Ágeis.",
         },
         4: {
           title:
-            "Desenvolvedor Front-end (ReactJS) Jr. na APP Noz (2022 - 2023)",
+            "Desenvolvedor Front-end (ReactJS) Jr. na APP Noz (2022 - 2023) 👨‍💻",
           description:
             "Construção e manutenção de interfaces de usuário com ReactJS (Functional/Class Components; HTML/CSS; Styled-Components; BootStrap; Redux/Saga; TypeScript; Documentação de componentes com StoryBook; Testes Unitários com Jest e Testing Library.); Controle de versionamento com GIT; Desenvolvimento ágil; *Mantendo projetos com milhares de usuários e atendendo suas necessidades*.",
         },
         5: {
           title:
-            "Desenvolvedor Front-end (ReactJS) Pleno na Intmed (2023 - Atualmente)",
+            "Desenvolvedor Front-end (ReactJS) Pleno na Intmed (2023 - Atualmente) 👨‍💻",
           description:
             "Construção de interfaces de usuário com ReactJS (HTML/CSS; Styled-Components; ContextAPI; TypeScript, entre outros); Controle de versionamento com GIT; Desenvolvimento ágil.",
         },
