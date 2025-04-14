@@ -9,7 +9,7 @@ export function Skills() {
     <Container>
       <InfoSkills key={t("hardSkills")}>
         <h2>{t("hardSkills")}</h2>
-        <Card description="" title="" descriptionLenght={0} width="30rem">
+        <Card title="" width="30rem">
           <ul>
             {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((number) => (
               <li key={t(`hardSkillsTopics.${number}`)}>
@@ -22,7 +22,7 @@ export function Skills() {
       </InfoSkills>
       <InfoSkills key={t("softSkills")}>
         <h2>{t("softSkills")}</h2>
-        <Card description="" title="" descriptionLenght={0} width="30rem">
+        <Card title="" width="30rem">
           <ul>
             {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((number) => (
               <li key={t(`softSkillsTopics.${number}`)}>

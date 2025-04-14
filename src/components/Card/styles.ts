@@ -11,7 +11,7 @@ export const Container = styled.div<CardContainerProps>`
     height: ${props => props.height ? props.height : '11rem'};
     width: ${props => props.width ? props.width : '20rem'};
 
-    padding: 0.5rem 1rem;
+    padding: 1rem 1rem;
     border-radius: 10px;
 
     display: flex;

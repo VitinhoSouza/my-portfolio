@@ -23,8 +23,6 @@ export function Formation() {
             <Card
               key={topic}
               title={topic}
-              description={null}
-              descriptionLenght={0}
               width="25rem"
             />
           ))}
@@ -40,7 +38,7 @@ export function Formation() {
               key={t(`practicalExperiencesTopics.${number}`)}
               description={t(
                 `practicalExperiencesTopics.${number}.description`
-              )}
+              ) || undefined}
               title={t(`practicalExperiencesTopics.${number}.title`)}
               descriptionLenght={400}
               width="25rem"

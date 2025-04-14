@@ -2,10 +2,10 @@ import { useTranslation } from "react-i18next";
 import { Container } from "./styles";
 import { ReactNode } from "react";
 
-interface IRepoCard {
+interface ICard {
   title: string;
-  description: string | null;
-  descriptionLenght: number;
+  description?: string;
+  descriptionLenght?: number;
   link?: string;
   width?: string;
   height?: string;
@@ -13,16 +13,18 @@ interface IRepoCard {
 }
 
 export function Card({
-  description,
+  description = "",
   link,
   title,
-  descriptionLenght,
+  descriptionLenght = 0,
   width,
   height,
   children,
-}: IRepoCard) {
+}: ICard) {
   const { t } = useTranslation("projects");
 
+
+  //Variant 1 = withChildren
   if (!!children) {
     return (
       <Container
@@ -34,21 +36,24 @@ export function Card({
     );
   }
 
+  //Variant2 - withTitle
   return (
     <Container width={!!width ? width : ""} height={!!height ? height : ""}>
       <h3>{title}</h3>
 
-      <span
-        title={
-          description !== null && description.length > descriptionLenght
-            ? description
-            : ""
-        }
-      >
-        {description !== null && description.length > descriptionLenght
-          ? description.slice(0, descriptionLenght) + "..."
-          : description}
-      </span>
+      {!!description && (
+        <span
+          title={
+            description?.length > descriptionLenght
+              ? description
+              : ""
+          }
+        >
+          {description?.length > descriptionLenght
+            ? description.slice(0, descriptionLenght) + "..."
+            : description}
+        </span>
+      )}
 
       {!!link && (
         <a href={link} target="_blank" rel="noreferrer">

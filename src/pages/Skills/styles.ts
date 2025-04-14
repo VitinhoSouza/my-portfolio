@@ -10,6 +10,7 @@ export const Container = styled.main`
 
   @media (max-width: 980px) {
     flex-direction: column;
+    gap: 2rem;
   }
 `;
 
@@ -17,21 +18,13 @@ export const InfoSkills = styled.div`
   height: 100%;
   width: 50%;
 
-  /* background: lime; */
-
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
 
   h2 {
-    margin-top: 1rem;
     margin-bottom: 1rem;
-  }
-
-  > div {
-    margin: auto 0;
-    height: 80%;
   }
 
   ul {
@@ -42,10 +35,5 @@ export const InfoSkills = styled.div`
     li {
       font-size: 1.3rem;
     }
-  }
-
-  @media (max-width: 980px) {
-    width: 80%;
-    height: 30rem;
   }
 `;
