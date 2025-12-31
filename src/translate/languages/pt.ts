@@ -135,6 +135,8 @@ const messages = {
       visitOnGithub: "Visite no Github",
       showLess: "Esconder",
       showMore: "Mostrar",
+      searchPlaceholder: "Pesquise por projetos...",
+      noProjectsFound: "Nenhum projeto encontrado!",
     },
     footer: {
       copyright: "Copyright © 2022 VitinhoDev. Todos os direitos reservados",
