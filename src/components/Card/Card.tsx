@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
-import { Container } from "./styles";
-import { ReactNode } from "react";
+import { Container, ToggleButton } from "./styles";
+import { ReactNode, useState } from "react";
 
 interface ICard {
   title: string;
@@ -10,6 +10,7 @@ interface ICard {
   width?: string;
   height?: string;
   children?: ReactNode;
+  collapsible?: boolean;
 }
 
 export function Card({
@@ -20,9 +21,10 @@ export function Card({
   width,
   height,
   children,
+  collapsible = false,
 }: ICard) {
   const { t } = useTranslation("projects");
-
+  const [isOpen, setIsOpen] = useState(!collapsible);
 
   //Variant 1 = withChildren
   if (!!children) {
@@ -38,28 +40,38 @@ export function Card({
 
   //Variant2 - withTitle
   return (
-    <Container width={!!width ? width : ""} height={!!height ? height : ""}>
-      <h3>{title}</h3>
+    <Container
+      width={width ?? ""}
+      height={height ?? ""}
+      isOpen={isOpen}
+      collapsible={collapsible}
+    >
+      <h3>
+        {title}{" "}
+        {collapsible && (
+          <ToggleButton onClick={() => setIsOpen((prev) => !prev)}>
+            {isOpen ? `${t("showLess")} ▲` : `${t("showMore")} ▼`}
+          </ToggleButton>
+        )}
+      </h3>
 
-      {!!description && (
-        <span
-          title={
-            description?.length > descriptionLenght
-              ? description
-              : ""
-          }
-        >
-          {description?.length > descriptionLenght
-            ? description.slice(0, descriptionLenght) + "..."
-            : description}
-        </span>
-      )}
+      <div className="content">
+        {!!description && (
+          <span
+            title={description.length > descriptionLenght ? description : ""}
+          >
+            {description.length > descriptionLenght
+              ? description.slice(0, descriptionLenght) + "..."
+              : description}
+          </span>
+        )}
 
-      {!!link && (
-        <a href={link} target="_blank" rel="noreferrer">
-          {t("visitOnGithub")}
-        </a>
-      )}
+        {!!link && (
+          <a href={link} target="_blank" rel="noreferrer">
+            {t("visitOnGithub")}
+          </a>
+        )}
+      </div>
     </Container>
   );
 }

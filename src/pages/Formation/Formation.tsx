@@ -24,6 +24,7 @@ export function Formation() {
               descriptionLenght={410}
               width="24.85rem"
               height="19rem"
+              collapsible
             />
           ))}
         </ul>
@@ -42,6 +43,7 @@ export function Formation() {
               descriptionLenght={410}
               width="24.85rem"
               height="19rem"
+              collapsible
             />
           ))}
         </ul>

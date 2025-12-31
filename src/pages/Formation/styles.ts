@@ -11,7 +11,6 @@ export const Container = styled.main`
 `;
 
 export const InfoEducation = styled.div`
-  height: 50%;
   width: 100%;
 
   display: flex;

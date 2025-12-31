@@ -129,6 +129,8 @@ const messages = {
     },
     projects: {
       visitOnGithub: "Visit on Github",
+      showLess: "To hide",
+      showMore: "To show",
     },
     footer: {
       copyright: "Copyright © 2022 VitinhoDev. All Rights Reserved",
