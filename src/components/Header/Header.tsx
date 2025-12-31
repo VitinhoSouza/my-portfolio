@@ -15,7 +15,7 @@ import {
   SwitchContainer,
   LanguageContainer,
   SelectLanguage,
-  ThemeAndLanguageContainer
+  ThemeAndLanguageContainer,
 } from "./styles";
 
 interface IHeaderProps {
@@ -36,7 +36,7 @@ export function Header({ toggleTheme }: IHeaderProps) {
   return (
     <Container>
       <PersonalData>
-        <span className="title">Vitinho</span>
+        <span className="title">Victor Souza</span>
         <span>{t("office")}</span>
       </PersonalData>
 
@@ -57,9 +57,11 @@ export function Header({ toggleTheme }: IHeaderProps) {
           <span>{title === "dark" ? "Dark" : "Light"}</span>
 
           <SwitchContainer>
-            <Sun size="1.2rem"/>
+            <Sun size="1.2rem" />
             <Switch
-              className={title === "dark" ? "toggleTheme active" : "toggleTheme"}
+              className={
+                title === "dark" ? "toggleTheme active" : "toggleTheme"
+              }
               onChange={toggleTheme}
               checked={title === "dark"}
               checkedIcon={false}
@@ -68,14 +70,16 @@ export function Header({ toggleTheme }: IHeaderProps) {
               offColor={colors.background}
               onColor={shade(0.4, colors.primary)}
             />
-            <Moon size="1.2rem"/>
+            <Moon size="1.2rem" />
           </SwitchContainer>
-
         </ThemeContainer>
 
         <LanguageContainer>
-          <span>{t('language')}</span>
-          <SelectLanguage defaultValue={i18n.language} onChange={handleLanguage}>
+          <span>{t("language")}</span>
+          <SelectLanguage
+            defaultValue={i18n.language}
+            onChange={handleLanguage}
+          >
             <option value="pt">Português 🇧🇷</option>
             <option value="en">English 🇺🇸</option>
           </SelectLanguage>

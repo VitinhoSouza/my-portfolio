@@ -1,7 +1,7 @@
 const messages = {
   en: {
     header: {
-      office: "WEB DEVELOPER (FRONTEND)",
+      office: "SOFTWARE FRONT-END ENGINEER",
       homeTitle: "About me",
       formationTitle: "Formation",
       skillsTitle: "Skills",
@@ -10,16 +10,60 @@ const messages = {
     },
     home: {
       whoAmI: "who am I?",
-      description:
-        "Hello, I've been a front-end developer for over 4 years, motivated by challenges and problem solving 🧑🏽‍💻. In my experiences, I have always sought a protagonist role, from which I was able to extract several soft and hard skills 📚. I am always looking to evolve as a person and as a professional. I am a responsible, organized and determined young man to achieve my goals 🎯.",
+      description: `
+        I'm a front-end developer with a lifelong affinity for technology. I started programming in high school and have been working professionally in the field since 2021, turning this interest into a career 💻
+
+        Throughout my academic journey, I excelled in projects, presentations, and competitions, frequently ranking among the top students in my class. I hold a Bachelor's degree in Information Systems from UFC – CE, with a Summa Cum Laude 🎓 graduation.
+
+        I work as a front-end engineer, focusing on ReactJS, developing high-performance, well-structured, and easy-to-maintain interfaces. I also have experience with Next.js, Node.js, and React Native, which broadens my product vision ⚛️
+
+        I am proactive, organized, and results-oriented, with good communication skills and a strong sense of responsibility. I come from the interior of Ceará, I'm a football enthusiast, and I'm always seeking professional and personal growth 🎯
+      `,
     },
     formation: {
       academicEducation: "Academic Education",
-      academicEducationTopics: `Elementary School at EEF Renato de Araújo Carneiro (2014) ✔️;
-                High School and Technical Course in Informatics at EEEP Maria Cavalcante Costa (2015 - 2017) ✔️;
-                Bachelor's Degree (Summa Cum Laude ⭐) in Information Systems at UFC - Quixadá (2018 - 2022) 🎓;
-                Ignite Training at Rocketseat - ReactJS Trails (2022 - 2023) 👨‍💻;
-                JStack Training - Node.js, ReactJS and React Native (2024 - Present) 👨‍💻`,
+      academicEducationTopics: {
+        1: {
+          title:
+            "Technical Course in Information Technology - EEEP Maria Cavalcante Costa (2015 - 2017) ✔️",
+          description: `
+      Focused on software development (programming logic, languages), hardware (computer assembly and maintenance), computer networks, operating systems, and databases, preparing students for the job market through theoretical and practical subjects and a mandatory internship, forming a professional capable of developing and maintaining systems, installing networks, and providing technical support.
+    `,
+        },
+        2: {
+          title:
+            "Bachelor’s Degree in Information Systems (Summa Cum Laude) - UFC (2018 - 2022) 🎓",
+          description: `
+      Academic Performance Index (IRA): 9.23.
+
+      Summa Cum Laude (Latin for “With the Highest Honor”) represents the highest distinction and is a recognition for achieving the maximum possible academic qualification in a university degree. At most 2 (two) students per program are awarded the Summa Cum Laude distinction annually, which is presented in a formal ceremony by the Rector of UFC.
+    `,
+        },
+        3: {
+          title: "Ignite Track (React) - Rocketseat (2022) ⚛️",
+          description: `
+      Learning the main technologies currently used in the ReactJS ecosystem, ranging from basic to more advanced topics such as: hooks, forms, contexts, Next.js fundamentals, data fetching and local cache, authentication and authorization, performance, unit testing, among other subjects.
+
+      Grade: 10
+    `,
+        },
+        4: {
+          title: "Ignite Track 2022 (React) - Rocketseat (2022 - 2023) ⚛️",
+          description: `
+      ReactJS fundamentals, SPA creation with ReactJS, API consumption and performance in ReactJS, Next.js fundamentals, Design System and Storybook, and full-stack application development with Next.js.
+
+      Grade: 10
+    `,
+        },
+        5: {
+          title: "JStack (2023 - 2025) ⚡",
+          description: `
+      JStack is a course that takes students from beginner to professional level in the most popular and widely used JavaScript stack today: Node.js, React, and React Native.
+
+      Throughout the course, in addition to the technologies mentioned above, topics such as Next.js, Docker, SQL and NoSQL databases, data caching, real-time communication with WebSockets, testing, and much more are covered.
+    `,
+        },
+      },
       practicalExperiences: "Practical Experiences",
       practicalExperiencesTopics: {
         1: {
@@ -37,18 +81,19 @@ const messages = {
           title:
             "Intern as Front-end Developer (ReactJS) at Lead Dell (2021-2022) 👨‍💻",
           description:
-            "Development of user interfaces with ReactJS, with the main technologies used: Typescript, Redux/Saga, CSS, SASS, HTML; REST API consumption; Versioning control with GIT; Agile Methodologies.",
+            "Development of interfaces using ReactJS, TypeScript, Redux/Redux-Saga, HTML, CSS, and SASS, integrating REST APIs, with version control in Git and working in agile teams. Very positive feedback at the end of the period, with consistent deliverables that exceeded expectations.",
         },
         4: {
-          title: "Front-end Developer Jr. (ReactJS) at APP Noz (2022 - 2023) 👨‍💻",
+          title:
+            "Front-end Developer Jr. (ReactJS) at APP Noz (2022 - 2023) 👨‍💻",
           description:
-            "Building and maintaining user interfaces with ReactJS (Functional/Class Components; HTML/CSS; Styled-Components; BootStrap; Redux/Saga; TypeScript; Component documentation with StoryBook; Unit Tests with Jest and Testing Library.); Versioning control with GIT; Agile development; *Maintaining projects with thousands of users and meeting their needs*.",
+            "Building and maintaining user interfaces with ReactJS, using functional and class components, TypeScript, HTML/CSS, and styling libraries such as Styled-Components and Bootstrap. Experience with state management (Redux/Saga), component documentation with Storybook, unit testing with Jest and Testing Library, version control with Git, and agile development, maintaining applications with thousands of active users and serving as a technical reference within the team.",
         },
         5: {
           title:
-            "Front-end Developer Pl. (ReactJS) at Intmed (2023 - At the moment) 👨‍💻",
+            "Front-end Developer Pl. (ReactJS) at Intmed (2023 - Present) 👨‍💻",
           description:
-            "Construction of user interfaces with ReactJS (HTML/CSS; Styled-Components; ContextAPI; TypeScript, among others); Versioning control with GIT; Agile development.",
+            "Continuous development and evolution of applications for Hapvida NotreDame, used throughout Brazil by thousands of users, working on the implementation, maintenance, and refactoring of functionalities with a focus on performance and UX, in addition to active participation in technical decisions and collaboration with product, design, and QA teams.",
         },
       },
     },

@@ -1,40 +1,40 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 type CardContainerProps = {
-    width: string;
-    height: string;
-}
+  width: string;
+  height: string;
+};
 
 export const Container = styled.div<CardContainerProps>`
-    background: black;
+  background: black;
 
-    height: ${props => props.height ? props.height : '11rem'};
-    width: ${props => props.width ? props.width : '20rem'};
+  height: ${(props) => (props.height ? props.height : "11rem")};
+  width: ${(props) => (props.width ? props.width : "20rem")};
 
-    padding: 1rem 1rem;
-    border-radius: 10px;
+  padding: 1rem 1rem;
+  border-radius: 10px;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
 
-    background: ${props => props.theme.colors.background_card};
-    color: ${props => props.theme.colors.text_card};
+  background: ${(props) => props.theme.colors.background_card};
+  color: ${(props) => props.theme.colors.text_card};
 
-    h3{
-        font-weight: 700;
+  h3 {
+    font-weight: 700;
+  }
+
+  span {
+  }
+
+  a {
+    color: ${(props) => props.theme.colors.text_card};
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.1);
     }
-
-    span{
-    }
-
-    a{
-        color:${props => props.theme.colors.text_card};
-
-        &:hover{
-            background: rgba(0,0,0,0.1);
-        }
-    }
-`
+  }
+`;

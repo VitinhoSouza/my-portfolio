@@ -3,10 +3,11 @@ import { useTranslation } from "react-i18next";
 import { Container, ContainerImage, ContainerDescription } from "./styles";
 
 export function Home() {
+  const [image, setImage] = useState(
+    "https://www.shutterstock.com/image-vector/programmer-icon-single-avatar-vector-260nw-2073604823.jpg"
+  );
 
-  const [image, setImage] = useState("https://www.shutterstock.com/image-vector/programmer-icon-single-avatar-vector-260nw-2073604823.jpg");
-
-  const { t } = useTranslation('home');
+  const { t } = useTranslation("home");
 
   useEffect(() => {
     fetch("https://api.github.com/users/VitinhoSouza")
@@ -21,10 +22,10 @@ export function Home() {
     <Container>
       <ContainerImage className="image">
         <img src={image} alt="Victor" />
+        <h1>{t("whoAmI")}</h1>
       </ContainerImage>
       <ContainerDescription className="description">
-        <h1>{t('whoAmI')}</h1>
-        <p>{t('description')}</p>
+        <p>{t("description")}</p>
       </ContainerDescription>
     </Container>
   );

@@ -1,7 +1,7 @@
 const messages = {
   pt: {
     header: {
-      office: "DESENVOLVEDOR WEB (FRONTEND)",
+      office: "ENGENHEIRO DE SOFTWARE FRONT-END",
       homeTitle: "Sobre mim",
       formationTitle: "Formação",
       skillsTitle: "Habilidades",
@@ -10,16 +10,63 @@ const messages = {
     },
     home: {
       whoAmI: "Quem sou eu?",
-      description:
-        "Olá, sou desenvolvedor front-end há mais de 4 anos, motivado por desafios e resolução de problemas 🧑🏽‍💻. Em minhas experiências, sempre busquei um papel de protagonista, nas quais pude extrair várias soft e hard skills 📚. Estou sempre buscando sempre evoluir como pessoa e como profissional. Sou um jovem responsável, organizado e determinado em alcançar minhas metas 🎯.",
+      description: `
+        Sou desenvolvedor front-end, com afinidade com tecnologia desde cedo. Comecei a programar no ensino médio e atuo profissionalmente na área desde 2021, transformando esse interesse em carreira 💻
+
+        Ao longo da minha trajetória acadêmica, me destaquei em projetos, apresentações e competições, ficando frequentemente entre os melhores das turmas. Sou Bacharel em Sistemas de Informação pela UFC – CE, com formação Summa Cum Laude 🎓
+
+        Atuo como engenheiro front-end, com foco em ReactJS, desenvolvendo interfaces performáticas, bem estruturadas e fáceis de manter. Tenho experiência também com Next.js, Node.js e React Native, o que amplia minha visão de produto ⚛️
+
+        Sou proativo, organizado e orientado a resultados, com boa comunicação e forte senso de responsabilidade. Venho do interior do Ceará, sou amante de futebol e estou sempre em busca de evolução profissional e pessoal 🎯
+      `,
     },
     formation: {
       academicEducation: "Formação acadêmica",
-      academicEducationTopics: `Ensino Fundamental na EEF Renato de Araújo Carneiro (2014) ✔️;
-                Ensino Médio e Curso Técnico em Informática na EEEP Maria Cavalcante Costa (2015 - 2017) ✔️;
-                Bacharelado (Summa Cum Laude ⭐) em Sistemas de Informação na UFC - Quixadá (2018 - 2022) 🎓;
-                Formação Ignite na Rocketseat - Trilhas de ReactJS (2022 - 2023) 👨‍💻;
-                Formação JStack - Node.js, ReactJS e React Native (2024 - Atualmente) 👨‍💻`,
+      academicEducationTopics: {
+        1: {
+          title:
+            "Curso Técnico em Informática - EEEP Maria Cavalcante Costa (2015 - 2017) ✔️",
+          description: `
+            Foco em desenvolvimento de software (lógica de programação, linguagens), hardware (montagem e manutenção de computadores), redes de computadores, sistemas operacionais e bancos de dados, preparando o aluno para o mercado com disciplinas teóricas e práticas e estágio obrigatório, formando um profissional apto a desenvolver e manter sistemas, instalar redes e dar suporte técnico. 
+          `,
+        },
+        2: {
+          title:
+            "Bacharelado em Sistemas de Informação (Summa Cum Laude) - UFC  (2018 - 2022)🎓",
+          description: `
+            Índice de Rendimento Acadêmico (IRA): 9.23.
+
+            Summa Cum Laude (Com a Maior das Honras, em latim) representa a maior distinção e é o reconhecimento por obter a máxima qualificação possível em uma titulação universitária. No máximo 2 (dois) alunos por curso são agraciados anualmente com a distinção Summa Cum Laude, que é entregue em solenidade pelo Reitor da UFC.
+          `,
+        },
+        3: {
+          title: "Trilha Ignite (React) - Rocketseat (2022) ⚛️",
+          description: `
+            Aprendendo principais tecnologias no ambiente do ReactJS utilizadas atualmente, desde temas básico até mais avançados como: hooks, forms, contextos, fundamentos do next.js, data fecthing e cache local, autenticação e autorização, performance, testes unitários, entre outros temas.
+
+            Nota: 10
+          `,
+        },
+        4: {
+          title: "Trilha Ignite 2022 (React) - Rocketseat (2022 - 2023) ⚛️",
+          description: `
+            Fundamentos do ReactJS, Criação de SPAs com ReactJS, Consumo de API e performance no
+
+            ReactJS, Fundamentos do Next.js, Design System e Storybook e Criação de aplicação FullStack
+            com NextJS.
+
+            Nota: 10
+          `,
+        },
+        5: {
+          title: "JStack (2023 -2025)⚡",
+          description: `
+            O JStack é um curso que vai do iniciante ao profissional na principal e mais utilizada Stack JavaScript da atualidade: NodeJS, React e React Native.
+
+            Ao decorrer do curso, além das tecnologias citadas à cima, abordaremos assuntos como Next.js, Docker, trabalharemos com bancos de dados SQL e NoSQL, cache de dados, real-time com Websockets, testes e muito mais.
+          `,
+        },
+      },
       practicalExperiences: "Experiências práticas",
       practicalExperiencesTopics: {
         1: {
@@ -38,19 +85,19 @@ const messages = {
           title:
             "Estagiário como Desenvolvedor Front-end (ReactJS) no Lead Dell (2021-2022) 👨‍💻",
           description:
-            "Desenvolvimento de interfaces de usuário com ReactJS, sendo as principais tecnologias utilizadas: Typescript, Redux/Saga, CSS, SASS, HTML; Consumo de API REST; Controle de versionamento com GIT; Metodologias Ágeis.",
+            "Desenvolvimento de interfaces com ReactJS, TypeScript, Redux/Redux-Saga, HTML, CSS e SASS, integrando APIs REST, com versionamento em Git e atuação em times ágeis. Feedback muito positivo ao final do período, com entregas consistentes e acima do esperado.",
         },
         4: {
           title:
             "Desenvolvedor Front-end (ReactJS) Jr. na APP Noz (2022 - 2023) 👨‍💻",
           description:
-            "Construção e manutenção de interfaces de usuário com ReactJS (Functional/Class Components; HTML/CSS; Styled-Components; BootStrap; Redux/Saga; TypeScript; Documentação de componentes com StoryBook; Testes Unitários com Jest e Testing Library.); Controle de versionamento com GIT; Desenvolvimento ágil; *Mantendo projetos com milhares de usuários e atendendo suas necessidades*.",
+            "Construção e manutenção de interfaces de usuário com ReactJS, utilizando componentes funcionais e de classe, TypeScript, HTML/CSS e bibliotecas de estilização como Styled-Components e Bootstrap. Atuação com gerenciamento de estado (Redux/Saga), documentação de componentes com Storybook, testes unitários com Jest e Testing Library, controle de versionamento com Git e desenvolvimento ágil, mantendo aplicações com milhares de usuários ativos e sendo referência técnica no time.",
         },
         5: {
           title:
-            "Desenvolvedor Front-end (ReactJS) Pleno na Intmed (2023 - Atualmente) 👨‍💻",
+            "Desenvolvedor Front-end (ReactJS) Pleno na Intmed (2023 - Presente) 👨‍💻",
           description:
-            "Construção de interfaces de usuário com ReactJS (HTML/CSS; Styled-Components; ContextAPI; TypeScript, entre outros); Controle de versionamento com GIT; Desenvolvimento ágil.",
+            "Desenvolvimento e evolução contínua de aplicações para a Hapvida NotreDame, utilizadas em todo o Brasil por milhares de usuários, atuando na implementação, manutenção e refatoração de funcionalidades com foco em performance e UX, além da participação ativa em decisões técnicas e colaboração com times de produto, design e QA.",
         },
       },
     },
